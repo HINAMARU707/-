@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시라츠키 학원 고등부 | 白月学園高等部</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand" onclick="showPage('home')">
+      <img src="images/school-logo.png" alt="白月学園高等部 로고" onerror="this.style.display='none'">
+      <div>
+        <strong>시라츠키 학원 고등부</strong>
+        <span>白月学園高等部</span>
+        <small>SHIRATSUKI ACADEMY HIGH SCHOOL</small>
+      </div>
+    </div>
+
+    <nav class="site-nav" aria-label="주요 메뉴">
+      <button class="nav-btn active" data-page="home" onclick="showPage('home')">홈</button>
+      <button class="nav-btn" data-page="about" onclick="showPage('about')">학교소개</button>
+      <button class="nav-btn" data-page="life" onclick="showPage('life')">학생생활</button>
+      <button class="nav-btn" data-page="facilities" onclick="showPage('facilities')">시설안내</button>
+      <button class="nav-btn" data-page="festival" onclick="showPage('festival')">백월제</button>
+      <button class="nav-btn" data-page="archive" onclick="showPage('archive')">자료실</button>
+      <button class="nav-btn" data-page="studentId" onclick="showPage('studentId')">학생증 발급</button>
+      <button class="nav-btn" data-page="admin" onclick="showPage('admin')">관리자</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="page active">
+      <section class="hero home-hero">
+        <img src="images/main-school.png" alt="시라츠키 학원 고등부 본관">
+        <div class="hero-gradient"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">白月学園高等部</p>
+          <h1>지성과 품격,<br>미래를 여는 교육</h1>
+          <p>知性と品格、未来を拓く学び。<br>Learning with Intelligence and Dignity.</p>
+          <div class="hero-actions">
+            <button onclick="showPage('about')">학교소개 보기</button>
+            <button class="outline" onclick="showPage('archive')">입학안내</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="notice-section content-wrap">
+        <div class="section-title side-title">
+          <h2>공지사항</h2>
+          <button class="text-link" onclick="showPage('archive')">더보기 〉</button>
+        </div>
+        <div class="notice-grid">
+          <article class="notice-card">
+            <span class="badge">공지</span><small>2024.05.20</small>
+            <h3>2025학년도 전형일정 안내</h3>
+            <p>입학 전형 일정을 안내드립니다.</p>
+          </article>
+          <article class="notice-card">
+            <span class="badge">행사</span><small>2024.05.16</small>
+            <h3>제12회 백월제 안내</h3>
+            <p>오는 6월 14일 개최됩니다.</p>
+          </article>
+          <article class="notice-card">
+            <span class="badge">공지</span><small>2024.05.10</small>
+            <h3>1학기 중간고사 일정 안내</h3>
+            <p>시험 일정을 확인해주세요.</p>
+          </article>
+          <article class="notice-card">
+            <span class="badge gold">안내</span><small>2024.05.02</small>
+            <h3>학생증 발급 신청 안내</h3>
+            <p>온라인 발급 신청을 시작합니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="quick-menu content-wrap glass-card">
+        <div class="section-title">
+          <h2>QUICK MENU</h2>
+          <p>원하는 메뉴를 빠르게 이용하세요.</p>
+        </div>
+        <div class="quick-grid">
+          <button onclick="showPage('about')"><span>🏫</span>학교소개</button>
+          <button onclick="showPage('facilities')"><span>📖</span>시설안내</button>
+          <button onclick="showPage('life')"><span>👥</span>학생생활</button>
+          <button onclick="showPage('festival')"><span>⚑</span>백월제</button>
+          <button onclick="showPage('archive')"><span>📣</span>자료실</button>
+          <button onclick="showPage('studentId')"><span>▣</span>학생증 발급</button>
+        </div>
+      </section>
+
+      <section class="content-wrap">
+        <div class="section-title side-title">
+          <div>
+            <h2>시설 안내</h2>
+            <p>쾌적하고 안전한 환경에서 학생들의 성장을 지원합니다.</p>
+          </div>
+          <button class="text-link" onclick="showPage('facilities')">더보기 〉</button>
+        </div>
+        <div class="feature-grid three">
+          <article class="image-card">
+            <img src="images/library.png" alt="백월 도서관">
+            <div><h3>백월 도서관</h3><p>지식과 영감이 숨 쉬는 공간.</p></div>
+          </article>
+          <article class="image-card">
+            <img src="images/sports-field.png" alt="종합 운동장">
+            <div><h3>종합 운동장</h3><p>건강한 신체와 도전 정신.</p></div>
+          </article>
+          <article class="image-card">
+            <img src="images/cafeteria.png" alt="학생 식당">
+            <div><h3>학생 식당</h3><p>영양과 맛을 고려한 식사.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="festival-banner content-wrap">
+        <img src="images/festival.png" alt="제12회 백월제">
+        <div class="banner-cover"></div>
+        <div>
+          <p>第12回 白月祭</p>
+          <h2>제12회 백월제</h2>
+          <p>우리의 이야기, 이 계절의 빛</p>
+          <button onclick="showPage('festival')">자세히 보기 〉</button>
+        </div>
+      </section>
+
+      <section class="access-strip content-wrap glass-card">
+        <div>
+          <h2>찾아오는 길</h2>
+          <p>시라츠키 학원 고등부로 오시는 길과 주변 위치 정보를 안내합니다.</p>
+          <button onclick="showPage('life')">오시는 길 안내 〉</button>
+        </div>
+        <img src="images/access-location-map.png" alt="시라츠키 학원 위치 지도">
+        <div class="contact-mini">
+          <b>주소</b>
+          <span>日本〒389-0102 Nagano, Karuizawa District, Karuizawa, 追分</span>
+          <b>전화</b>
+          <span>03-1234-5678</span>
+          <b>이메일</b>
+          <span>info@shiratsuki-academy.jp</span>
+        </div>
+      </section>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="page">
+      <section class="sub-hero">
+        <img src="images/main-school.png" alt="시라츠키 학원 고등부">
+        <div>
+          <p>ABOUT</p>
+          <h1>학교소개</h1>
+          <span>지성과 품격, 책임을 갖춘 미래 인재를 기르는 배움의 터전</span>
+        </div>
+      </section>
+
+      <section class="content-wrap intro-layout">
+        <article class="glass-card intro-text">
+          <img class="intro-logo" src="images/school-logo.png" alt="학교 로고" onerror="this.style.display='none'">
+          <h2>시라츠키 학원 고등부는 학생 한 사람의 가능성을 존중하며,<br>지성과 품격, 책임감을 갖춘 미래 인재를 기릅니다.</h2>
+          <p>우리는 학생 개개인의 잠재력을 발견하고, 스스로의 길을 개척하는 힘을 기를 수 있도록 최고의 교육 환경과 따뜻한 공동체 문화를 제공합니다.</p>
+        </article>
+
+        <div class="value-row">
+          <article><span>知性</span><h3>지성</h3><p>깊이 있는 탐구와 창의적 사고로 미래를 밝히는 지성.</p></article>
+          <article><span>品格</span><h3>품격</h3><p>타인을 존중하고 배려하며 올바른 가치를 지닌 품격.</p></article>
+          <article><span>責任</span><h3>책임</h3><p>자기 주도적 삶의 태도로 사회를 이끄는 책임감.</p></article>
+        </div>
+
+        <div class="feature-grid three">
+          <article class="image-card">
+            <img src="images/forest-path.png" alt="자연 친화적 환경">
+            <div><h3>자연 친화적 환경</h3><p>푸른 숲과 깨끗한 공기 속에서 마음과 몸이 자라는 캠퍼스.</p></div>
+          </article>
+          <article class="image-card">
+            <img src="images/sports-field.png" alt="기숙형 학습 환경">
+            <div><h3>기숙형 학습 환경</h3><p>안전하고 쾌적한 시설과 학습 공간에서 집중과 성장을 지원합니다.</p></div>
+          </article>
+          <article class="image-card">
+            <img src="images/morning-campus.png" alt="학생 자치 문화">
+            <div><h3>학생 자치 문화</h3><p>학생 스스로 참여하고 만들어가는 자율과 책임의 공동체.</p></div>
+          </article>
+        </div>
+
+        <div class="split-card">
+          <article class="glass-card">
+            <h2>학교장 인사말</h2>
+            <p>학생 한 사람의 고유한 가능성을 발견하고 그 가능성이 세상을 이롭게 하는 힘으로 자랄 수 있도록, 시라츠키 학원 고등부는 지성 · 품격 · 책임의 가치를 바탕으로 교육합니다.</p>
+            <p class="signature">학교장 白月 蓮</p>
+          </article>
+          <article class="glass-card">
+            <h2>학교 개요</h2>
+            <dl class="info-list">
+              <dt>위치</dt><dd>日本〒389-0102 Nagano, Karuizawa District, Karuizawa, 追分</dd>
+              <dt>학교 유형</dt><dd>사립 기숙형 남녀공학 고등부</dd>
+              <dt>교육 이념</dt><dd>지성 · 품격 · 책임</dd>
+              <dt>특징</dt><dd>문화 · 예술 · 체육 특기 과정 운영</dd>
+            </dl>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <!-- LIFE -->
+    <section id="life" class="page">
+      <section class="sub-hero">
+        <img src="images/morning-campus.png" alt="학생생활">
+        <div>
+          <p>SCHOOL LIFE</p>
+          <h1>학생생활</h1>
+          <span>맑은 하늘 아래, 스스로의 가능성을 넓혀가는 배움.</span>
+        </div>
+      </section>
+
+      <section class="content-wrap life-layout">
+        <div class="life-main">
+          <div class="section-title">
+            <h2>학교 생활 안내</h2>
+          </div>
+          <div class="value-row slim">
+            <article><span>01</span><h3>배려와 존중의 공동체</h3><p>서로를 존중하며 함께 성장하는 따뜻한 공동체.</p></article>
+            <article><span>02</span><h3>자율과 책임의 생활</h3><p>스스로 계획하고 실천하는 생활을 배웁니다.</p></article>
+            <article><span>03</span><h3>자연 속 힐링 캠퍼스</h3><p>아조의 숲과 어우러진 쾌적한 배움터.</p></article>
+            <article><span>04</span><h3>안전한 생활 환경</h3><p>기숙사와 교내 시설을 체계적으로 관리합니다.</p></article>
+          </div>
+
+          <div class="section-title">
+            <h2>캠퍼스 생활</h2>
+          </div>
+          <div class="feature-grid three">
+            <article class="image-card"><img src="images/old-style-campus-gate.png" alt="기숙사 생활"><div><h3>기숙사 생활</h3><p>따뜻한 공동체 문화를 경험합니다.</p></div></article>
+            <article class="image-card"><img src="images/cafeteria.png" alt="학생 식당"><div><h3>학생 식당</h3><p>건강하고 균형 잡힌 식사를 제공합니다.</p></div></article>
+            <article class="image-card"><img src="images/library.png" alt="백월 도서관"><div><h3>백월 도서관</h3><p>다양한 책과 자료를 만나보세요.</p></div></article>
+            <article class="image-card"><img src="images/sports-field.png" alt="종합 운동장"><div><h3>종합 운동장</h3><p>건강한 도전 정신을 기릅니다.</p></div></article>
+            <article class="image-card"><img src="images/student-council.png" alt="학생회"><div><h3>학생회 활동</h3><p>학생 자치와 책임을 배웁니다.</p></div></article>
+            <article class="image-card"><img src="images/forest-path.png" alt="자연 체험"><div><h3>자연 체험 활동</h3><p>숲길에서 마음을 가다듬는 시간.</p></div></article>
+          </div>
+        </div>
+
+        <aside class="access-floating glass-card">
+          <div class="access-head">
+            <h2>학교 오는 길</h2>
+            <span>ACCESS</span>
+          </div>
+          <p>시라츠키 학원 고등부로 오시는 길과 주변 위치 정보를 안내합니다.</p>
+          <img src="images/access-location-map.png" alt="학교 위치 지도">
+          <button onclick="openRouteModal()">오시는 길 보기 〉</button>
+          <div class="mini-campus">
+            <h3>캠퍼스 한눈에 보기</h3>
+            <img src="images/campus-guide-map.png" alt="캠퍼스 안내도">
+          </div>
+        </aside>
+      </section>
+
+      <section class="content-wrap day-schedule glass-card">
+        <h2>하루 일과 예시</h2>
+        <div>
+          <span><b>08:30</b> 등교 및 아침 조회</span>
+          <span><b>09:00~15:30</b> 수업 및 학습</span>
+          <span><b>12:00~13:00</b> 점심 식사</span>
+          <span><b>15:40~17:00</b> 자율학습 / 보충</span>
+          <span><b>17:30~19:00</b> 저녁 식사 및 휴식</span>
+          <span><b>22:00</b> 기숙사 시간</span>
+        </div>
+      </section>
+    </section>
+
+    <!-- FACILITIES -->
+    <section id="facilities" class="page">
+      <section class="sub-hero">
+        <img src="images/school-gate-alt.png" alt="시설안내">
+        <div>
+          <p>FACILITIES</p>
+          <h1>시설안내</h1>
+          <span>학생들의 배움과 성장을 위한 백월학원의 다양한 교육 환경</span>
+        </div>
+      </section>
+
+      <section class="content-wrap facilities-layout">
+        <div class="facility-list">
+          <article class="facility-wide">
+            <img src="images/library.png" alt="백월 도서관">
+            <div><h2>백월 도서관</h2><p>지식과 영감이 숨 쉬는 학습 공간. 장서 보유, 열람실 및 스터디룸, 디지털 자료실을 운영합니다.</p></div>
+          </article>
+          <article class="facility-wide">
+            <img src="images/sports-field.png" alt="운동장 체육시설">
+            <div><h2>운동장 / 체육시설</h2><p>국제 규격 트랙 및 운동장, 체육관, 테니스장 등 야외 시설을 갖추고 있습니다.</p></div>
+          </article>
+          <article class="facility-wide">
+            <img src="images/cafeteria.png" alt="학생 식당">
+            <div><h2>학생 식당</h2><p>전문 영양사의 균형 잡힌 식단과 넓고 쾌적한 식사 공간을 제공합니다.</p></div>
+          </article>
+          <article class="facility-wide">
+            <img src="images/hallway.png" alt="복도 캠퍼스 동선">
+            <div><h2>복도 / 캠퍼스 동선</h2><p>안전하고 효율적인 캠퍼스 이용을 위한 안내 시스템과 쾌적한 이동 공간.</p></div>
+          </article>
+        </div>
+
+        <aside class="facility-side glass-card">
+          <h2>캠퍼스 개요</h2>
+          <dl class="info-list compact">
+            <dt>설립 이념</dt><dd>지성 · 품격 · 미래</dd>
+            <dt>건학 이념</dt><dd>지성의 빛은, 미래의 길이 된다.</dd>
+            <dt>캠퍼스 면적</dt><dd>약 120,000㎡</dd>
+            <dt>학생 수</dt><dd>약 1,200명</dd>
+          </dl>
+          <div class="side-message">
+            <img src="images/school-logo.png" alt="로고" onerror="this.style.display='none'">
+            <p>쾌적하고 안전한 교육 환경으로 학생들의 꿈과 성장을 응원합니다.</p>
+          </div>
+        </aside>
+      </section>
+    </section>
+
+    <!-- FESTIVAL -->
+    <section id="festival" class="page">
+      <section class="festival-hero">
+        <img src="images/festival.png" alt="제12회 백월제">
+        <div class="banner-cover"></div>
+        <div>
+          <p>第12回 白月祭</p>
+          <h1>제12회 백월제</h1>
+          <h2>우리의 이야기, 이 계절의 빛</h2>
+          <button>축제 안내 보기</button>
+        </div>
+      </section>
+
+      <section class="content-wrap">
+        <div class="festival-info glass-card">
+          <div>
+            <h2>축제 소개</h2>
+            <p>백월제는 학생들이 주체가 되어 기획·운영하는 시라츠키 학원 고등부의 대표 축제입니다. 연구, 예술, 공연, 체험이 어우러진 특별한 하루를 함께 즐겨보세요.</p>
+          </div>
+          <div class="festival-meta">
+            <span><b>축제명</b> 제12회 백월제</span>
+            <span><b>슬로건</b> 우리의 이야기, 이 계절의 빛</span>
+            <span><b>기간</b> 2024.06.14 - 06.15</span>
+            <span><b>장소</b> 백월학원 고등부 캠퍼스 전역</span>
+          </div>
+        </div>
+
+        <div class="program-grid">
+          <article class="image-card"><img src="images/student-council.png" alt="동아리 전시"><div><h3>동아리 전시</h3><p>다양한 주제의 전시와 창작물을 만나보세요.</p></div></article>
+          <article class="image-card"><img src="images/garden.png" alt="체험 부스"><div><h3>체험 부스</h3><p>학생들이 직접 기획한 체험 프로그램.</p></div></article>
+          <article class="image-card"><img src="images/festival.png" alt="무대 공연"><div><h3>무대 공연</h3><p>밴드, 댄스, 연극 등 특별 공연.</p></div></article>
+          <article class="image-card"><img src="images/cafeteria.png" alt="백월 마켓"><div><h3>백월 마켓</h3><p>간식과 기념품을 판매합니다.</p></div></article>
+        </div>
+      </section>
+    </section>
+
+    <!-- ARCHIVE -->
+    <section id="archive" class="page">
+      <section class="sub-hero">
+        <img src="images/hallway.png" alt="자료실">
+        <div>
+          <p>ARCHIVE</p>
+          <h1>자료실</h1>
+          <span>학교 안내 자료와 공지 문서를 확인할 수 있습니다.</span>
+        </div>
+      </section>
+
+      <section class="content-wrap archive-list">
+        <article class="notice-card"><span class="badge">학교</span><h3>시라츠키 학원 고등부 학교 안내서</h3><p>학교 개요와 교육 이념을 확인할 수 있습니다.</p></article>
+        <article class="notice-card"><span class="badge">생활</span><h3>기숙사 생활 수칙</h3><p>공동체 생활을 위한 기본 규칙입니다.</p></article>
+        <article class="notice-card"><span class="badge">행사</span><h3>제12회 백월제 공식 안내문</h3><p>축제 일정과 방문객 안내를 확인하세요.</p></article>
+        <article class="notice-card"><span class="badge gold">방재</span><h3>생활관 대피훈련 안내서</h3><p>안전한 학교생활을 위한 비상 대응 안내.</p></article>
+      </section>
+    </section>
+
+    <!-- STUDENT ID -->
+    <section id="studentId" class="page">
+      <section class="sub-hero">
+        <img src="images/main-school.png" alt="학생증 발급">
+        <div>
+          <p>STUDENT ID ISSUE SYSTEM</p>
+          <h1>학생증 발급</h1>
+          <span>학생 정보를 입력하고, 시라츠키 학원 고등부의 공식 학생증을 발급받을 수 있습니다.</span>
+        </div>
+      </section>
+
+      <section class="content-wrap id-system">
+        <form class="id-form glass-card" onsubmit="event.preventDefault(); issueStudentId();">
+          <h2>학생 정보 입력</h2>
+
+          <label>이름 *</label>
+          <input id="nameInput" type="text" placeholder="이름을 입력하세요">
+
+          <label>생년월일 *</label>
+          <input id="birthInput" type="text" placeholder="YYYY.MM.DD">
+
+          <label>학년 *</label>
+          <select id="gradeInput">
+            <option value="">학년을 선택하세요</option>
+            <option>1학년</option>
+            <option>2학년</option>
+            <option>3학년</option>
+          </select>
+
+          <label>반 *</label>
+          <select id="classInput">
+            <option value="">반을 선택하세요</option>
+            <option>A반</option>
+            <option>B반</option>
+            <option>C반</option>
+            <option>D반</option>
+          </select>
+
+          <label>동아리</label>
+          <input id="clubInput" type="text" placeholder="예: 원예부">
+
+          <div class="two-inputs">
+            <div><label>키 (cm)</label><input id="heightInput" type="text" placeholder="예: 170"></div>
+            <div><label>몸무게 (kg)</label><input id="weightInput" type="text" placeholder="예: 60"></div>
+          </div>
+
+          <label>학생 사진 업로드 *</label>
+          <div class="upload-box">
+            <input id="photoInput" type="file" accept="image/*">
+            <span>사진을 선택하거나 드래그하세요.<br><small>권장 규격: JPG/PNG, 5MB 이하</small></span>
+          </div>
+
+          <div class="id-buttons">
+            <button type="submit">학생증 발급</button>
+            <button type="button" class="outline" onclick="flipCard()">미리보기</button>
+            <button type="button" class="outline" onclick="downloadCard()">PNG 저장</button>
+          </div>
+
+          <div class="info-box">
+            <b>사진 유의사항</b>
+            <p>정면, 상반신, 배경색 사진 권장. 모자, 선글라스 착용은 피해 주세요.</p>
+          </div>
+        </form>
+
+        <div class="id-preview glass-card">
+          <h2>학생증 미리보기</h2>
+          <div class="card-flip" id="cardFlip">
+            <div class="card-inner">
+              <div class="student-card card-front" id="studentCard">
+                <div class="card-top">
+                  <img src="images/school-logo.png" alt="로고" onerror="this.style.display='none'">
+                  <div>
+                    <h3>白月学園高等部</h3>
+                    <p>SHIRATSUKI ACADEMY HIGH SCHOOL</p>
+                  </div>
+                  <span>STUDENT ID CARD</span>
+                </div>
+                <div class="card-body">
+                  <div class="photo-box">
+                    <img id="cardPhoto" alt="">
+                    <em id="photoText">PHOTO</em>
+                  </div>
+                  <div class="card-info">
+                    <p><b>氏名</b><span id="cardName">---</span></p>
+                    <p><b>生年月日</b><span id="cardBirth">---</span></p>
+                    <p><b>学年</b><span id="cardGrade">---</span></p>
+                    <p><b>組</b><span id="cardClass">---</span></p>
+                    <p><b>部活動</b><span id="cardClub">---</span></p>
+                    <p><b>身長・体重</b><span id="cardBody">---</span></p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <span>発行日 20XX.07.18</span>
+                  <span>本証は白月学園高等部の生徒証明書です。</span>
+                </div>
+              </div>
+
+              <div class="student-card card-back">
+                <img src="images/school-logo.png" alt="로고" onerror="this.style.display='none'">
+                <h3>白月学園高等部</h3>
+                <p>SHIRATSUKI ACADEMY HIGH SCHOOL</p>
+                <ul>
+                  <li>本証は白月学園高等部の生徒であることを証明します。</li>
+                  <li>校内では常に本証を携帯してください。</li>
+                  <li>紛失した場合は、速やかに学生課へ届け出てください。</li>
+                </ul>
+                <div class="barcode">||||||||||||||||||||||||||||||||||||||||||||</div>
+              </div>
+            </div>
+          </div>
+          <p class="preview-note">카드를 클릭하면 앞면/뒷면이 전환됩니다.</p>
+        </div>
+      </section>
+
+      <canvas id="downloadCanvas" width="2200" height="1400" class="hidden-canvas"></canvas>
+    </section>
+
+    <!-- ADMIN -->
+    <section id="admin" class="page">
+      <section class="admin-page">
+        <div class="admin-panel">
+          <p>AUTHORIZED ACCESS ONLY</p>
+          <h1>PROJECT ARK</h1>
+          <input id="password" type="password" placeholder="PASSWORD">
+          <button onclick="checkPassword()">LOGIN</button>
+          <pre id="terminal">SYSTEM STANDBY...</pre>
+          <div id="adminDocs" class="admin-docs hidden">
+            <h2>관리자 전용 문서</h2>
+            <p>Project ARK 운영 매뉴얼</p>
+            <p>NOAH 중앙 시스템 기록</p>
+            <p>Loop Record</p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <div id="routeModal" class="modal hidden" onclick="closeRouteModal(event)">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeRouteModal(event)">×</button>
+      <h2>학교 오는 길</h2>
+      <img src="images/access-location-map.png" alt="오시는 길 지도">
+      <div class="route-grid">
+        <article><b>철도 이용</b><p>시나노오이와케역 하차 · 도보 약 15분</p></article>
+        <article><b>차량 이용</b><p>가루이자와 IC에서 약 20분 · 교내 주차 가능</p></article>
+        <article><b>캠퍼스 진입</b><p>산책로 또는 정문 이용</p></article>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-values">
+      <span>지성 · 품격 · 책임<br><small>Intelligence · Dignity · Responsibility</small></span>
+      <span>知性 · 品格 · 責任<br><small>Intelligence · Dignity · Responsibility</small></span>
+      <span>맑은 하늘 아래,<br><small>스스로의 가능성을 넓혀가는 배움.</small></span>
+    </div>
+    <div class="footer-bottom">
+      <div class="brand footer-brand">
+        <img src="images/school-logo.png" alt="로고" onerror="this.style.display='none'">
+        <div>
+          <strong>白月学園高等部</strong>
+          <small>SHIRATSUKI ACADEMY HIGH SCHOOL</small>
+        </div>
+      </div>
+      <p>개인정보처리방침　　이용약관　　사이트맵<br>© 2024 Shiratsuki Academy High School. All rights reserved.</p>
+      <div class="sns"><span>▶</span><span>◎</span><span>f</span></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
